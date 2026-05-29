@@ -9,20 +9,6 @@ import { Product } from "@/lib/types";
 export const products: Product[] = [
   // ───────────────────────── Newborn ─────────────────────────
   {
-    id: "nb-001",
-    name_ar: "صندوق تذكار المولود الفاخر",
-    name_en: "Luxury Newborn Keepsake Box",
-    price: 74,
-    category: "newborn",
-    images: ["/products/z16.jpeg"],
-    description_ar:
-      "صندوق خشبي أنيق محفور بالاسم لحفظ أول خصلة شعر وسوار المستشفى وأجمل ذكريات الولادة.",
-    description_en:
-      "An elegant engraved wooden box to treasure baby's first lock of hair, hospital bracelet, and precious birth memories.",
-    popularity: 92,
-    featured: true,
-  },
-  {
     id: "nb-002",
     name_ar: "طقم بطانية ولّابة مطرزة",
     name_en: "Embroidered Swaddle Blanket Set",
