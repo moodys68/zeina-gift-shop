@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { categoryMap } from "@/data/categories";
 import { Product } from "@/lib/types";
 
@@ -9,10 +10,10 @@ const directions = [
 ];
 
 /**
- * Renders a polished placeholder tile for a product. Because the shop ships
- * without real photography yet, each image "seed" produces a distinct gradient
- * artwork featuring the category icon. Replace this component's body with a
- * real <Image /> once product photos are available.
+ * Renders a product image tile. When the selected `images` entry is a real
+ * file path (e.g. "/products/z1.jpeg") it shows that photo; otherwise it falls
+ * back to a gradient artwork featuring the category icon (used for products
+ * that don't have photography yet). See README for how to add photos.
  */
 export default function ProductImage({
   product,
@@ -26,6 +27,23 @@ export default function ProductImage({
   iconSize?: string;
 }) {
   const category = categoryMap[product.category];
+  const src = product.images[seedIndex];
+  const isPhoto = typeof src === "string" && src.startsWith("/");
+
+  if (isPhoto) {
+    return (
+      <div className={`relative overflow-hidden bg-sand ${className}`}>
+        <Image
+          src={src}
+          alt={product.name_en}
+          fill
+          className="object-cover"
+          sizes="(max-width: 768px) 50vw, 25vw"
+        />
+      </div>
+    );
+  }
+
   const direction = directions[seedIndex % directions.length];
 
   return (

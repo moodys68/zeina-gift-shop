@@ -14,7 +14,7 @@ export const products: Product[] = [
     name_en: "Luxury Newborn Keepsake Box",
     price: 74,
     category: "newborn",
-    images: ["a", "b", "c"],
+    images: ["/products/z16.jpeg"],
     description_ar:
       "صندوق خشبي أنيق محفور بالاسم لحفظ أول خصلة شعر وسوار المستشفى وأجمل ذكريات الولادة.",
     description_en:
@@ -54,7 +54,7 @@ export const products: Product[] = [
     name_en: "Newborn Welcome Gift Basket",
     price: 96,
     category: "newborn",
-    images: ["a", "b", "c"],
+    images: ["/products/z20.jpeg", "/products/z21.jpeg"],
     description_ar:
       "سلة متكاملة تضم لبس قطني، دمية ناعمة، وبطاقة تهنئة مخصصة لاستقبال الضيف الجديد.",
     description_en:
@@ -83,7 +83,7 @@ export const products: Product[] = [
     name_en: "Gold Couple Names Plaque",
     price: 84,
     category: "anniversary",
-    images: ["a", "b", "c"],
+    images: ["/products/z29.jpeg", "/products/z12.jpeg"],
     description_ar:
       "لوحة فنية فاخرة بنقش ذهبي لاسمي الزوجين وتاريخ الزفاف، إطار خشبي راقٍ يزيّن المنزل.",
     description_en:
@@ -97,7 +97,7 @@ export const products: Product[] = [
     name_en: "Romantic Scented Candle Set",
     price: 56,
     category: "anniversary",
-    images: ["a", "b"],
+    images: ["/products/z18.jpeg", "/products/z19.jpeg", "/products/z17.jpeg"],
     description_ar:
       "مجموعة شموع عطرية بروائح الورد والعنبر داخل علبة هدايا فاخرة لأمسية لا تُنسى.",
     description_en:
@@ -110,7 +110,7 @@ export const products: Product[] = [
     name_en: "Personalized Couple Wall Clock",
     price: 70,
     category: "anniversary",
-    images: ["a", "b", "c"],
+    images: ["/products/z11.jpeg", "/products/z14.jpeg", "/products/z13.jpeg"],
     description_ar:
       "ساعة حائط أنيقة تُطبع عليها صورة أو اسم الزوجين، هدية عملية تدوم لسنوات.",
     description_en:
@@ -123,7 +123,7 @@ export const products: Product[] = [
     name_en: "Engraved Crystal Glass Pair",
     price: 64,
     category: "anniversary",
-    images: ["a", "b"],
+    images: ["/products/z23.jpeg", "/products/z15.jpeg"],
     description_ar:
       "طقم من كأسين كريستال منقوشين بتاريخ الذكرى، لتوثيق نخب الحب في كل مناسبة.",
     description_en:
@@ -138,7 +138,7 @@ export const products: Product[] = [
     name_en: "Name-Embroidered Prayer Rug",
     price: 60,
     category: "hajj-umrah",
-    images: ["a", "b", "c"],
+    images: ["/products/z1.jpeg", "/products/z2.jpeg", "/products/z3.jpeg"],
     description_ar:
       "سجادة صلاة فاخرة ناعمة الملمس مطرزة بالاسم، هدية مباركة للحاج والمعتمر.",
     description_en:
@@ -152,7 +152,7 @@ export const products: Product[] = [
     name_en: "Hajj Return Gift Box",
     price: 88,
     category: "hajj-umrah",
-    images: ["a", "b", "c"],
+    images: ["/products/z26.jpeg", "/products/z31.jpeg", "/products/z25.jpeg", "/products/z4.jpeg"],
     description_ar:
       "صندوق يضم تمر فاخر، ماء زمزم، مسبحة، وعطر، لتوزيعه عند العودة من الرحلة المباركة.",
     description_en:
@@ -166,7 +166,7 @@ export const products: Product[] = [
     name_en: "Premium Agate Prayer Beads",
     price: 44,
     category: "hajj-umrah",
-    images: ["a", "b"],
+    images: ["/products/z8.jpeg", "/products/z10.jpeg"],
     description_ar:
       "مسبحة من حجر العقيق الطبيعي بحبات مصقولة داخل علبة هدية أنيقة.",
     description_en:
@@ -179,7 +179,7 @@ export const products: Product[] = [
     name_en: "Musk & Oud Fragrance Set",
     price: 78,
     category: "hajj-umrah",
-    images: ["a", "b", "c"],
+    images: ["/products/z9.jpeg", "/products/z5.jpeg", "/products/z6.jpeg"],
     description_ar:
       "مجموعة عطور شرقية أصيلة بروائح المسك والعود في تغليف هدية راقٍ.",
     description_en:
@@ -192,7 +192,7 @@ export const products: Product[] = [
     name_en: "Decorative Quranic Verse Frame",
     price: 66,
     category: "hajj-umrah",
-    images: ["a", "b"],
+    images: ["/products/z22.jpeg", "/products/z24.jpeg", "/products/z27.jpeg", "/products/z33.jpeg"],
     description_ar:
       "لوحة فنية بزخرفة إسلامية وآية قرآنية مذهّبة تضفي روحانية على المكان.",
     description_en:

@@ -105,9 +105,12 @@ Edit **`data/categories.ts`** and add a `Category` object, then add the matching
 
 ## How images work
 
-This starter ships **without photography**. The `images` array on each product holds *placeholder seeds* (e.g. `["a", "b", "c"]`); each seed renders a distinct gradient tile via `components/ProductImage.tsx`, using the product's category gradient and icon. The number of seeds = the number of gallery thumbnails on the product page.
+Each product's `images` array drives `components/ProductImage.tsx`, which supports two kinds of entries:
 
-**To use real photos:** drop image files in `public/` and update `components/ProductImage.tsx` to render a Next.js `<Image />` (or `<img>`) from the product's `images` paths instead of the gradient. No other files need to change.
+- **A real photo path** (e.g. `"/products/z1.jpeg"`) — rendered as an optimized Next.js `<Image />`. Real photos live in `public/products/`. Each entry becomes one gallery thumbnail on the product page.
+- **A placeholder seed** (e.g. `"a"`, `"b"`) — rendered as a gradient tile using the product's category color and icon. Used for products that don't have photography yet (the graduation category currently uses these).
+
+**To add a photo to a product:** drop the file in `public/products/`, then set the product's `images` entry to its path, e.g. `images: ["/products/my-photo.jpeg"]`. You can mix paths and seeds freely. No other files need to change.
 
 ---
 
