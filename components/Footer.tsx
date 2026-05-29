@@ -9,7 +9,7 @@ export default function Footer() {
   const year = new Date().getFullYear();
 
   const socials = [
-    { label: "Instagram", icon: "📷", href: "#" },
+    { label: "Instagram", icon: "📷", href: "https://instagram.com/zeinagiftshop" },
     { label: "Twitter / X", icon: "🐦", href: "#" },
     { label: "WhatsApp", icon: "💬", href: "#" },
     { label: "Snapchat", icon: "👻", href: "#" },
@@ -82,19 +82,35 @@ export default function Footer() {
             <li>📞 +961 70 000 000</li>
             <li>✉️ hello@zeinagiftshop.com</li>
             <li>📍 {tr("contact_address_value")}</li>
+            <li>
+              <a
+                href="https://instagram.com/zeinagiftshop"
+                target="_blank"
+                rel="noopener noreferrer"
+                dir="ltr"
+                className="inline-block transition hover:text-cream"
+              >
+                📷 @zeinagiftshop
+              </a>
+            </li>
           </ul>
           <h4 className="mb-3 mt-5 font-semibold">{tr("footer_follow")}</h4>
           <div className="flex gap-2">
-            {socials.map((s) => (
-              <a
-                key={s.label}
-                href={s.href}
-                aria-label={s.label}
-                className="flex h-9 w-9 items-center justify-center rounded-full bg-cream/10 text-lg transition hover:bg-cream/20"
-              >
-                {s.icon}
-              </a>
-            ))}
+            {socials.map((s) => {
+              const external = s.href !== "#";
+              return (
+                <a
+                  key={s.label}
+                  href={s.href}
+                  aria-label={s.label}
+                  target={external ? "_blank" : undefined}
+                  rel={external ? "noopener noreferrer" : undefined}
+                  className="flex h-9 w-9 items-center justify-center rounded-full bg-cream/10 text-lg transition hover:bg-cream/20"
+                >
+                  {s.icon}
+                </a>
+              );
+            })}
           </div>
         </div>
       </div>
