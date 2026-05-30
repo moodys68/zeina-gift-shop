@@ -141,10 +141,6 @@ const dict: Dict = {
   },
 
   // Footer
-  footer_about: {
-    ar: "زينة للهدايا — وجهتك لأجمل الهدايا والتذكارات لكل مناسبة.",
-    en: "Zeina Gift Shop — your destination for the finest gifts and keepsakes for every occasion.",
-  },
   footer_quick_links: { ar: "روابط سريعة", en: "Quick links" },
   footer_categories: { ar: "الأقسام", en: "Categories" },
   footer_contact: { ar: "تواصل معنا", en: "Get in touch" },
@@ -152,10 +148,6 @@ const dict: Dict = {
   footer_rights: {
     ar: "جميع الحقوق محفوظة",
     en: "All rights reserved",
-  },
-  footer_price_note: {
-    ar: "الأسعار قابلة للتغيير حسب التخصيص والكمية لكل قطعة.",
-    en: "Prices are subject to changes depending on any item customizations and quantity.",
   },
 
   // Misc
