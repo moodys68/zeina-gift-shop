@@ -48,9 +48,9 @@ export default function ContactPage() {
     {
       icon: "📷",
       label: "Instagram",
-      value: "@zeinagiftshop",
+      value: "@zeinasgiftshop",
       dir: "ltr",
-      href: "https://instagram.com/zeinagiftshop",
+      href: "https://instagram.com/zeinasgiftshop",
       external: true,
     },
     {

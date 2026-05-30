@@ -8,7 +8,7 @@ export default function Footer() {
   const { tr, locale } = useLanguage();
 
   const socials = [
-    { label: "Instagram", icon: "📷", href: "https://instagram.com/zeinagiftshop" },
+    { label: "Instagram", icon: "📷", href: "https://instagram.com/zeinasgiftshop" },
     { label: "Twitter / X", icon: "🐦", href: "#" },
     { label: "WhatsApp", icon: "💬", href: "https://wa.me/96179167821" },
     { label: "Snapchat", icon: "👻", href: "#" },
@@ -99,13 +99,13 @@ export default function Footer() {
             <li>📍 {tr("contact_address_value")}</li>
             <li>
               <a
-                href="https://instagram.com/zeinagiftshop"
+                href="https://instagram.com/zeinasgiftshop"
                 target="_blank"
                 rel="noopener noreferrer"
                 dir="ltr"
                 className="inline-block transition hover:text-cream"
               >
-                📷 @zeinagiftshop
+                📷 @zeinasgiftshop
               </a>
             </li>
           </ul>
