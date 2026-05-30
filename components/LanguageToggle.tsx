@@ -12,7 +12,7 @@ export default function LanguageToggle({
     <button
       type="button"
       onClick={toggleLocale}
-      className={`inline-flex items-center gap-1.5 rounded-full border border-sand px-3 py-1.5 text-sm font-medium text-ink transition hover:bg-sand ${className}`}
+      className={`inline-flex items-center gap-1 text-xs font-semibold uppercase tracking-[0.22em] text-ink/70 transition hover:text-ink ${className}`}
       aria-label="Toggle language"
     >
       <span aria-hidden>🌐</span>

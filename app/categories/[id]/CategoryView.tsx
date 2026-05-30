@@ -45,16 +45,10 @@ export default function CategoryView({
   return (
     <div className="animate-fade-in-up">
       {/* Category hero */}
-      <section
-        className={`bg-gradient-to-br ${category.gradient} py-12`}
-      >
-        <div className="container-page text-center">
-          <span className="text-5xl drop-shadow-sm">{category.icon}</span>
-          <h1 className="mt-3 text-3xl font-extrabold text-cream sm:text-4xl">
-            {name}
-          </h1>
-          <p className="mt-2 text-cream/85">{tagline}</p>
-        </div>
+      <section className="container-page py-16 text-center sm:py-20">
+        <span className="text-5xl">{category.icon}</span>
+        <p className="eyebrow mt-5">{tagline}</p>
+        <h1 className="section-title mt-3">{name}</h1>
       </section>
 
       <div className="container-page py-10">

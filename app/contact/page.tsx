@@ -67,13 +67,9 @@ export default function ContactPage() {
 
   return (
     <div className="animate-fade-in-up">
-      <section className="bg-gradient-to-br from-blush-600 via-ink to-gold-600 py-14">
-        <div className="container-page text-center">
-          <h1 className="text-3xl font-extrabold text-cream sm:text-4xl">
-            {tr("contact_title")}
-          </h1>
-          <p className="mt-3 text-cream/85">{tr("contact_subtitle")}</p>
-        </div>
+      <section className="container-page py-16 text-center">
+        <p className="eyebrow">{tr("contact_subtitle")}</p>
+        <h1 className="section-title mt-3">{tr("contact_title")}</h1>
       </section>
 
       <div className="container-page grid gap-8 py-14 lg:grid-cols-2">

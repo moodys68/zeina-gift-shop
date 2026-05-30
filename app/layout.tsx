@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Cairo } from "next/font/google";
+import { Cairo, Playfair_Display, Amiri } from "next/font/google";
 import "./globals.css";
 import Providers from "@/context/Providers";
 import Header from "@/components/Header";
@@ -8,6 +8,21 @@ import Footer from "@/components/Footer";
 const cairo = Cairo({
   subsets: ["arabic", "latin"],
   variable: "--font-cairo",
+  display: "swap",
+});
+
+// Editorial display serif for Latin headings.
+const playfair = Playfair_Display({
+  subsets: ["latin"],
+  variable: "--font-playfair",
+  display: "swap",
+});
+
+// Naskh-style Arabic serif so headings stay editorial in RTL too.
+const amiri = Amiri({
+  subsets: ["arabic"],
+  weight: ["400", "700"],
+  variable: "--font-amiri",
   display: "swap",
 });
 
@@ -23,7 +38,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="ar" dir="rtl" className={cairo.variable}>
+    <html
+      lang="ar"
+      dir="rtl"
+      className={`${cairo.variable} ${playfair.variable} ${amiri.variable}`}
+    >
       <body className="font-sans antialiased">
         <Providers>
           <div className="flex min-h-screen flex-col">

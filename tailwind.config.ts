@@ -31,6 +31,12 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["var(--font-cairo)", "system-ui", "sans-serif"],
+        display: [
+          "var(--font-playfair)",
+          "var(--font-amiri)",
+          "Georgia",
+          "serif",
+        ],
       },
       boxShadow: {
         soft: "0 8px 30px rgba(59, 47, 42, 0.08)",

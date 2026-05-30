@@ -32,15 +32,12 @@ export default function AboutPage() {
 
   return (
     <div className="animate-fade-in-up">
-      <section className="bg-gradient-to-br from-blush-600 via-ink to-gold-600 py-16">
-        <div className="container-page text-center">
-          <h1 className="text-3xl font-extrabold text-cream sm:text-4xl">
-            {tr("about_title")}
-          </h1>
-          <p className="mx-auto mt-4 max-w-2xl leading-relaxed text-cream/85">
-            {tr("about_body")}
-          </p>
-        </div>
+      <section className="container-page py-20 text-center">
+        <p className="eyebrow">{tr("brand")}</p>
+        <h1 className="section-title mt-3">{tr("about_title")}</h1>
+        <p className="mx-auto mt-6 max-w-2xl leading-relaxed text-ink/70">
+          {tr("about_body")}
+        </p>
       </section>
 
       <section className="container-page py-14">
