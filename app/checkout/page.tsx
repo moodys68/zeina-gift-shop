@@ -159,9 +159,6 @@ export default function CheckoutPage() {
               />
             </div>
           </div>
-          <p className="mt-4 rounded-xl bg-sand/50 p-3 text-sm text-ink/70">
-            💵 {tr("payment_note")}
-          </p>
         </div>
 
         {/* Order summary */}

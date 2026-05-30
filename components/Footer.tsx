@@ -6,7 +6,6 @@ import { categories } from "@/data/categories";
 
 export default function Footer() {
   const { tr, locale } = useLanguage();
-  const year = new Date().getFullYear();
 
   const socials = [
     { label: "Instagram", icon: "📷", href: "https://instagram.com/zeinagiftshop" },
@@ -129,10 +128,6 @@ export default function Footer() {
             })}
           </div>
         </div>
-      </div>
-
-      <div className="border-t border-cream/10 py-4 text-center text-xs text-cream/60">
-        © {year} {tr("brand")} — {tr("footer_rights")}
       </div>
     </footer>
   );

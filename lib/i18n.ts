@@ -100,10 +100,6 @@ const dict: Dict = {
   phone_invalid: { ar: "رقم جوال غير صالح", en: "Invalid phone number" },
   order_summary: { ar: "ملخّص الطلب", en: "Order summary" },
   place_order: { ar: "تأكيد الطلب", en: "Place Order" },
-  payment_note: {
-    ar: "الدفع عند الاستلام — لا حاجة لإدخال بيانات بطاقة.",
-    en: "Cash on delivery — no card details required.",
-  },
 
   // Confirmation
   confirm_title: { ar: "تم استلام طلبك بنجاح!", en: "Your order is confirmed!" },
@@ -145,10 +141,6 @@ const dict: Dict = {
   footer_categories: { ar: "الأقسام", en: "Categories" },
   footer_contact: { ar: "تواصل معنا", en: "Get in touch" },
   footer_follow: { ar: "تابعنا", en: "Follow us" },
-  footer_rights: {
-    ar: "جميع الحقوق محفوظة",
-    en: "All rights reserved",
-  },
 
   // Misc
   currency: { ar: "$", en: "USD" },
