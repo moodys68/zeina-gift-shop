@@ -11,7 +11,7 @@ export default function Footer() {
   const socials = [
     { label: "Instagram", icon: "📷", href: "https://instagram.com/zeinagiftshop" },
     { label: "Twitter / X", icon: "🐦", href: "#" },
-    { label: "WhatsApp", icon: "💬", href: "#" },
+    { label: "WhatsApp", icon: "💬", href: "https://wa.me/96179167821" },
     { label: "Snapchat", icon: "👻", href: "#" },
   ];
 
@@ -79,7 +79,26 @@ export default function Footer() {
         <div>
           <h4 className="mb-3 font-semibold">{tr("footer_contact")}</h4>
           <ul className="space-y-2 text-sm text-cream/70">
-            <li>📞 +961 70 000 000</li>
+            <li>
+              <a
+                href="tel:+96179167821"
+                dir="ltr"
+                className="inline-block transition hover:text-cream"
+              >
+                📞 +961 79 167 821
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://wa.me/96179167821"
+                target="_blank"
+                rel="noopener noreferrer"
+                dir="ltr"
+                className="inline-block transition hover:text-cream"
+              >
+                💬 WhatsApp: +961 79 167 821
+              </a>
+            </li>
             <li>✉️ hello@zeinagiftshop.com</li>
             <li>📍 {tr("contact_address_value")}</li>
             <li>

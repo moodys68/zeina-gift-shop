@@ -11,8 +11,8 @@ const config: Config = {
         // Fresh green & yellow gift-shop palette.
         // Token roles: `cream`/`sand` = backgrounds, `blush` = primary (green),
         // `gold` = accent (yellow), `ink` = dark text.
-        cream: "#FBFCF3",
-        sand: "#E4EFD0",
+        cream: "#FFFFFF",
+        sand: "#F1F2F4",
         blush: {
           50: "#E8F0E6",
           100: "#C9DDC2",
@@ -27,7 +27,7 @@ const config: Config = {
           500: "#A6840F",
           600: "#7C6108",
         },
-        ink: "#16271A",
+        ink: "#000000",
       },
       fontFamily: {
         sans: ["var(--font-cairo)", "system-ui", "sans-serif"],

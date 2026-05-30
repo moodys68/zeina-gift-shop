@@ -121,6 +121,7 @@ const dict: Dict = {
     en: "We'd love to help and answer your questions",
   },
   contact_phone: { ar: "الهاتف", en: "Phone" },
+  contact_whatsapp: { ar: "واتساب", en: "WhatsApp" },
   contact_email: { ar: "البريد الإلكتروني", en: "Email" },
   contact_address: { ar: "العنوان", en: "Address" },
   contact_hours: { ar: "ساعات العمل", en: "Working hours" },

@@ -15,11 +15,54 @@ export default function ContactPage() {
     window.setTimeout(() => setSent(false), 4000);
   };
 
-  const info = [
-    { icon: "📞", label: tr("contact_phone"), value: "+961 70 000 000", dir: "ltr" },
-    { icon: "✉️", label: tr("contact_email"), value: "hello@zeinagiftshop.com", dir: "ltr" },
-    { icon: "📍", label: tr("contact_address"), value: tr("contact_address_value") },
-    { icon: "🕐", label: tr("contact_hours"), value: tr("contact_hours_value") },
+  const info: {
+    icon: string;
+    label: string;
+    value: string;
+    dir?: "ltr";
+    href?: string;
+    external?: boolean;
+  }[] = [
+    {
+      icon: "📞",
+      label: tr("contact_phone"),
+      value: "+961 79 167 821",
+      dir: "ltr",
+      href: "tel:+96179167821",
+    },
+    {
+      icon: "💬",
+      label: tr("contact_whatsapp"),
+      value: "+961 79 167 821",
+      dir: "ltr",
+      href: "https://wa.me/96179167821",
+      external: true,
+    },
+    {
+      icon: "✉️",
+      label: tr("contact_email"),
+      value: "hello@zeinagiftshop.com",
+      dir: "ltr",
+      href: "mailto:hello@zeinagiftshop.com",
+    },
+    {
+      icon: "📷",
+      label: "Instagram",
+      value: "@zeinagiftshop",
+      dir: "ltr",
+      href: "https://instagram.com/zeinagiftshop",
+      external: true,
+    },
+    {
+      icon: "📍",
+      label: tr("contact_address"),
+      value: tr("contact_address_value"),
+    },
+    {
+      icon: "🕐",
+      label: tr("contact_hours"),
+      value: tr("contact_hours_value"),
+    },
   ];
 
   return (
@@ -40,12 +83,21 @@ export default function ContactPage() {
             <div key={i.label} className="rounded-2xl bg-white p-6 shadow-card">
               <span className="text-3xl">{i.icon}</span>
               <h3 className="mt-3 font-semibold text-ink">{i.label}</h3>
-              <p
-                className="mt-1 text-sm text-ink/60"
-                dir={i.dir as "ltr" | undefined}
-              >
-                {i.value}
-              </p>
+              {i.href ? (
+                <a
+                  href={i.href}
+                  target={i.external ? "_blank" : undefined}
+                  rel={i.external ? "noopener noreferrer" : undefined}
+                  dir={i.dir}
+                  className="mt-1 inline-block text-sm text-ink/70 underline-offset-2 transition hover:text-blush-600 hover:underline"
+                >
+                  {i.value}
+                </a>
+              ) : (
+                <p className="mt-1 text-sm text-ink/60" dir={i.dir}>
+                  {i.value}
+                </p>
+              )}
             </div>
           ))}
         </div>
