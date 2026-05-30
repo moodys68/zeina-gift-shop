@@ -153,6 +153,10 @@ const dict: Dict = {
     ar: "جميع الحقوق محفوظة",
     en: "All rights reserved",
   },
+  footer_price_note: {
+    ar: "الأسعار قابلة للتغيير حسب التخصيص والكمية لكل قطعة.",
+    en: "Prices are subject to changes depending on any item customizations and quantity.",
+  },
 
   // Misc
   currency: { ar: "$", en: "USD" },

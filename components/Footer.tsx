@@ -134,8 +134,9 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-cream/10 py-4 text-center text-xs text-cream/60">
-        © {year} {tr("brand")} — {tr("footer_rights")}
+      <div className="border-t border-cream/10 px-4 py-4 text-center text-xs text-cream/60">
+        <p className="mb-1 italic text-cream/75">💡 {tr("footer_price_note")}</p>
+        <p>© {year} {tr("brand")} — {tr("footer_rights")}</p>
       </div>
     </footer>
   );
