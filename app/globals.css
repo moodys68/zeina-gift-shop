@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background-color: theme("colors.cream");
+  background-color: theme("colors.page");
   color: theme("colors.ink");
   min-height: 100vh;
 }
@@ -27,19 +27,23 @@ body {
 
 @layer components {
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 border border-ink bg-ink px-8 py-3.5 text-xs font-semibold uppercase tracking-[0.2em] text-cream transition hover:border-blush-600 hover:bg-blush-600 disabled:cursor-not-allowed disabled:opacity-50;
+    @apply inline-flex items-center justify-center gap-2 border border-navy-700 bg-navy-700 px-8 py-3.5 text-xs font-semibold uppercase tracking-[0.2em] text-cream transition hover:border-navy-800 hover:bg-navy-800 disabled:cursor-not-allowed disabled:opacity-50;
   }
   .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2 border border-ink bg-transparent px-8 py-3.5 text-xs font-semibold uppercase tracking-[0.2em] text-ink transition hover:bg-ink hover:text-cream;
+    @apply inline-flex items-center justify-center gap-2 border border-ink/70 bg-transparent px-8 py-3.5 text-xs font-semibold uppercase tracking-[0.2em] text-ink transition hover:bg-ink hover:text-cream;
   }
   .container-page {
     @apply mx-auto w-full max-w-6xl px-4;
   }
   .section-title {
-    @apply font-display text-3xl font-normal tracking-tight text-ink sm:text-5xl;
+    @apply font-display text-3xl font-normal tracking-tight text-gold-600 sm:text-5xl;
   }
   .eyebrow {
-    @apply text-xs font-semibold uppercase tracking-[0.3em] text-ink/60;
+    @apply text-xs font-semibold uppercase tracking-[0.3em] text-gold-600;
+  }
+  /* Thin dark gallery frame around product/category artwork. */
+  .img-frame {
+    @apply border border-ink/30 shadow-[0_8px_30px_rgba(42,38,34,0.15)];
   }
   .input-field {
     @apply w-full rounded-none border border-sand bg-white px-4 py-3 text-ink outline-none transition focus:border-ink focus:ring-1 focus:ring-ink;

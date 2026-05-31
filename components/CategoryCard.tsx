@@ -15,7 +15,7 @@ export default function CategoryCard({ category }: { category: Category }) {
       className="group relative flex flex-col justify-end overflow-hidden rounded-2xl shadow-card transition hover:-translate-y-1 hover:shadow-soft"
     >
       <div
-        className={`flex aspect-[4/5] flex-col items-center justify-center bg-gradient-to-br ${category.gradient}`}
+        className={`img-frame flex aspect-[4/5] flex-col items-center justify-center bg-gradient-to-br ${category.gradient}`}
       >
         <span className="text-6xl drop-shadow-sm transition group-hover:scale-110">
           {category.icon}

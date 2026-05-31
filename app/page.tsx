@@ -16,10 +16,10 @@ export default function HomePage() {
       {/* Hero — editorial, centered */}
       <section className="container-page py-20 text-center sm:py-28">
         <p className="eyebrow">{tr("brandTagline")}</p>
-        <h1 className="mx-auto mt-5 max-w-4xl font-display text-4xl font-normal leading-[1.1] tracking-tight text-ink sm:text-6xl lg:text-7xl">
+        <h1 className="mx-auto mt-5 max-w-4xl font-display text-4xl font-normal leading-[1.1] tracking-tight text-gold-500 sm:text-6xl lg:text-7xl">
           {tr("hero_title")}
         </h1>
-        <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-ink/65 sm:text-lg">
+        <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-ink/70 sm:text-lg">
           {tr("hero_subtitle")}
         </p>
         <div className="mt-10 flex flex-wrap justify-center gap-3">
@@ -46,7 +46,7 @@ export default function HomePage() {
       </section>
 
       {/* Featured products */}
-      <section className="bg-sand/50 py-16">
+      <section className="border-y border-ink/10 bg-cream/40 py-16">
         <div className="container-page">
           <div className="mb-10 text-center">
             <p className="eyebrow">{tr("featured_subtitle")}</p>

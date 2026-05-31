@@ -32,7 +32,7 @@ export default function ProductImage({
 
   if (isPhoto) {
     return (
-      <div className={`relative overflow-hidden bg-sand ${className}`}>
+      <div className={`img-frame relative overflow-hidden bg-sand ${className}`}>
         <Image
           src={src}
           alt={product.name_en}
@@ -48,7 +48,7 @@ export default function ProductImage({
 
   return (
     <div
-      className={`relative flex items-center justify-center overflow-hidden ${direction} ${category.gradient} ${className}`}
+      className={`img-frame relative flex items-center justify-center overflow-hidden ${direction} ${category.gradient} ${className}`}
       role="img"
       aria-label={`${product.name_en} — placeholder image`}
     >

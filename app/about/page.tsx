@@ -58,7 +58,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="bg-sand/40 py-14">
+      <section className="border-y border-ink/10 bg-cream/30 py-14">
         <div className="container-page text-center">
           <h2 className="section-title">{tr("categories_title")}</h2>
           <div className="mt-8 grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">

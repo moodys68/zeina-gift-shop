@@ -91,7 +91,7 @@ export default function ProductView({
         </div>
 
         {/* Details */}
-        <div className="flex flex-col">
+        <div className="flex flex-col bg-cream p-6 text-ink shadow-soft sm:p-8">
           <Link
             href={`/categories/${category.id}`}
             className="inline-flex w-fit items-center gap-1 rounded-full bg-sand px-3 py-1 text-sm text-ink/70 transition hover:text-blush-600"

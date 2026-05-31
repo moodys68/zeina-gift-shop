@@ -8,26 +8,35 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Fresh green & yellow gift-shop palette.
-        // Token roles: `cream`/`sand` = backgrounds, `blush` = primary (green),
-        // `gold` = accent (yellow), `ink` = dark text.
+        // ÆBELE-style editorial palette: warm ivory page, brass-gold accents,
+        // deep navy call-to-action. `cream` stays white for cards, frames, and
+        // text on dark elements (footer, category overlays).
+        page: "#F4EEE1", // warm ivory background
         cream: "#FFFFFF",
-        sand: "#F1F2F4",
+        sand: "#EAE2D2", // warm beige for section bands / borders
+        ink: "#2A2622", // warm charcoal text (softer than pure black)
+        // `blush` keeps its name (used widely for accents) but now carries the
+        // brass-gold ramp, so prices, badges, and focus rings turn gold.
         blush: {
-          50: "#E8F0E6",
-          100: "#C9DDC2",
-          200: "#93BE86",
-          300: "#5C9A4D",
-          400: "#3A7A2C",
-          500: "#225E26",
-          600: "#143F19",
+          50: "#FAF6EC",
+          100: "#F3EAD3",
+          200: "#E7D5AC",
+          300: "#D8BE81",
+          400: "#C2A56B",
+          500: "#A98A4B",
+          600: "#8C7039",
         },
+        // `gold` mirrors the brass ramp; used for display headings + eyebrows.
         gold: {
-          400: "#C9A227",
-          500: "#A6840F",
-          600: "#7C6108",
+          400: "#C2A56B",
+          500: "#A98A4B",
+          600: "#8C7039",
         },
-        ink: "#000000",
+        // Deep navy for primary buttons (the ÆBELE "Explore the Collection" CTA).
+        navy: {
+          700: "#21385B",
+          800: "#182A45",
+        },
       },
       fontFamily: {
         sans: ["var(--font-cairo)", "system-ui", "sans-serif"],
