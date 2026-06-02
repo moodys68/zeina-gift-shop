@@ -37,3 +37,31 @@ export interface CartItem {
   product: Product;
   quantity: number;
 }
+
+export type PluginCategory =
+  | "marketing"
+  | "shipping"
+  | "analytics"
+  | "payments"
+  | "customer-service"
+  | "design";
+
+export interface Plugin {
+  id: string;
+  name_ar: string;
+  name_en: string;
+  description_ar: string;
+  description_en: string;
+  longDescription_ar: string;
+  longDescription_en: string;
+  category: PluginCategory;
+  icon: string;
+  price: number;
+  rating: number;
+  reviews: number;
+  developer_ar: string;
+  developer_en: string;
+  featured?: boolean;
+  tags_ar: string[];
+  tags_en: string[];
+}

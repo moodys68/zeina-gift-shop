@@ -142,6 +142,42 @@ const dict: Dict = {
   footer_contact: { ar: "تواصل معنا", en: "Get in touch" },
   footer_follow: { ar: "تابعنا", en: "Follow us" },
 
+  // Plugin marketplace
+  nav_plugins: { ar: "المتجر الإضافي", en: "Plugin Market" },
+  plugins_hero_title: {
+    ar: "متجر الإضافات",
+    en: "Plugin Marketplace",
+  },
+  plugins_hero_subtitle: {
+    ar: "وسّع متجرك بأدوات احترافية تُضاف بنقرة واحدة",
+    en: "Extend your shop with professional tools — installed in one click",
+  },
+  plugins_search_placeholder: { ar: "ابحث عن إضافة...", en: "Search plugins..." },
+  plugins_all: { ar: "الكل", en: "All" },
+  plugins_category_marketing: { ar: "تسويق", en: "Marketing" },
+  plugins_category_shipping: { ar: "شحن وتوصيل", en: "Shipping" },
+  plugins_category_analytics: { ar: "تحليلات", en: "Analytics" },
+  plugins_category_payments: { ar: "مدفوعات", en: "Payments" },
+  plugins_category_customer_service: { ar: "خدمة العملاء", en: "Customer Service" },
+  plugins_category_design: { ar: "تصميم", en: "Design" },
+  plugins_free: { ar: "مجاني", en: "Free" },
+  plugins_per_month: { ar: "/شهر", en: "/mo" },
+  plugins_install: { ar: "تثبيت", en: "Install" },
+  plugins_uninstall: { ar: "إلغاء التثبيت", en: "Uninstall" },
+  plugins_installed: { ar: "مُثبَّت ✓", en: "Installed ✓" },
+  plugins_details: { ar: "التفاصيل", en: "Details" },
+  plugins_reviews: { ar: "تقييم", en: "reviews" },
+  plugins_by: { ar: "بواسطة", en: "by" },
+  plugins_tags: { ar: "التصنيفات", en: "Tags" },
+  plugins_no_results: { ar: "لا توجد إضافات مطابقة.", en: "No matching plugins." },
+  plugins_featured: { ar: "إضافات مميزة", en: "Featured Plugins" },
+  plugins_count: { ar: "إضافة", en: "plugins" },
+  plugins_back: { ar: "العودة إلى المتجر", en: "Back to marketplace" },
+  plugins_long_desc: { ar: "وصف تفصيلي", en: "Full description" },
+  plugins_developer: { ar: "المطوّر", en: "Developer" },
+  plugins_manage: { ar: "إدارة الإضافات المثبّتة", en: "Manage installed plugins" },
+  plugins_installed_count: { ar: "إضافات مثبّتة", en: "installed" },
+
   // Misc
   currency: { ar: "$", en: "USD" },
   free_shipping_banner: {
