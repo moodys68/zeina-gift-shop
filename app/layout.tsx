@@ -4,6 +4,7 @@ import "./globals.css";
 import Providers from "@/context/Providers";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import AnnouncementBanner from "@/components/AnnouncementBanner";
 
 const cairo = Cairo({
   subsets: ["arabic", "latin"],
@@ -47,6 +48,7 @@ export default function RootLayout({
         <Providers>
           <div className="flex min-h-screen flex-col">
             <Header />
+            <AnnouncementBanner />
             <main className="flex-1">{children}</main>
             <Footer />
           </div>

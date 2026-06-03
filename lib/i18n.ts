@@ -148,6 +148,10 @@ const dict: Dict = {
     ar: "🚚 شحن مجاني لجميع الطلبات داخل لبنان",
     en: "🚚 Free shipping on all orders within Lebanon",
   },
+  pilgrim_banner: {
+    ar: "🕋 منتجاتنا الجديدة للحجّاج العائدين من مكة المكرمة — اطلب الآن!",
+    en: "🕋 Our new products for pilgrims coming back from Makkah — order now!",
+  },
 };
 
 export type TranslationKey = keyof typeof dict;

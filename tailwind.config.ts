@@ -56,9 +56,20 @@ const config: Config = {
           "0%": { opacity: "0", transform: "translateY(12px)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
+        // Attention-grabbing flash for the announcement banner.
+        flash: {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0.35" },
+        },
+        "flash-bg": {
+          "0%, 100%": { backgroundColor: "#DC2626" }, // red-600
+          "50%": { backgroundColor: "#991B1B" }, // red-800
+        },
       },
       animation: {
         "fade-in-up": "fade-in-up 0.5s ease-out both",
+        flash: "flash 1s ease-in-out infinite",
+        "flash-bg": "flash-bg 1.1s ease-in-out infinite",
       },
     },
   },

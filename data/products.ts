@@ -191,9 +191,9 @@ export const products: Product[] = [
     id: "gr-001",
     name_ar: "ميدالية وشهادة تخرج مخصصة",
     name_en: "Custom Graduation Medal & Scroll",
-    price: 52,
+    price: 300,
     category: "graduation",
-    images: ["a", "b", "c"],
+    images: ["/products/hajj-table-display.jpeg"],
     description_ar:
       "ميدالية معدنية فاخرة مع شهادة رمزية منقوشة بالاسم والتخصص، لتتويج الإنجاز.",
     description_en:
@@ -205,9 +205,9 @@ export const products: Product[] = [
     id: "gr-002",
     name_ar: "صندوق هدايا التخرج المتكامل",
     name_en: "Complete Graduation Gift Box",
-    price: 100,
+    price: 200,
     category: "graduation",
-    images: ["a", "b", "c"],
+    images: ["/products/hajj-tasbih-set.jpeg"],
     description_ar:
       "صندوق يجمع قلم فاخر، مفكرة جلدية، وبطاقة تهنئة مخصصة لبداية فصل جديد.",
     description_en:
