@@ -186,15 +186,15 @@ export const products: Product[] = [
   // ──────────────────────── Hajj & Umrah ──────────────────────
   {
     id: "hu-001",
-    name_ar: "سجادة صلاة مطرزة بالاسم",
-    name_en: "Name-Embroidered Prayer Rug",
+    name_ar: "صينية ضيافة للحج و العمرة",
+    name_en: "Hajj & Umrah Welcome Tray",
     price: 60,
     category: "hajj-umrah",
     images: ["/products/hajj-zamzam.jpeg", "/products/hajj-sugared-almonds.jpeg"],
     description_ar:
-      "سجادة صلاة فاخرة ناعمة الملمس مطرزة بالاسم، هدية مباركة للحاج والمعتمر.",
+      "صينية ضيافة فاخرة بقوارير ماء زمزم ولوز مسكّر، لتوزيعها على المهنّئين بالحج والعمرة.",
     description_en:
-      "A premium soft-touch prayer rug embroidered with a name — a blessed gift for pilgrims.",
+      "A premium hospitality tray with Zamzam water bottles and sugared almonds to share with well-wishers for Hajj & Umrah.",
     popularity: 89,
     featured: true,
   },
