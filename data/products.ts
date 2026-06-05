@@ -297,15 +297,15 @@ export const products: Product[] = [
   // ───────────────────────── Graduation ───────────────────────
   {
     id: "gr-001",
-    name_ar: "ميدالية وشهادة تخرج مخصصة",
-    name_en: "Custom Graduation Medal & Scroll",
+    name_ar: "مجموعة كاملة للحج و العمرة",
+    name_en: "Complete Hajj & Umrah Set",
     price: 300,
     category: "graduation",
     images: ["/products/hajj-table-display.jpeg"],
     description_ar:
-      "ميدالية معدنية فاخرة مع شهادة رمزية منقوشة بالاسم والتخصص، لتتويج الإنجاز.",
+      "مجموعة ضيافة متكاملة للحج والعمرة تضم صينية ذهبية، قوارير ماء زمزم، تمرًا، وديكورات راقية لاستقبال الحجاج العائدين.",
     description_en:
-      "A premium metal medal with a symbolic scroll engraved with name and major to crown the achievement.",
+      "A complete Hajj & Umrah hospitality set with a gold tray, Zamzam water bottles, dates, and elegant decor to welcome returning pilgrims.",
     popularity: 87,
     featured: true,
   },
