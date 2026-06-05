@@ -61,6 +61,58 @@ export const products: Product[] = [
       "A gentle musical box with soothing lullabies to help baby drift off and warm up the nursery.",
     popularity: 61,
   },
+  {
+    id: "nb-006",
+    name_ar: "صينية ضيافة الترحيب بالمولودة",
+    name_en: "Welcome Baby Girl Chocolate Tray",
+    price: 50,
+    category: "newborn",
+    images: ["/products/newborn-cataleya.jpeg"],
+    description_ar:
+      "صينية ضيافة وردية بشوكولا مغلّفة وبطاقات «Welcome Baby» مخصصة باسم المولودة، مع لوز ملوّن.",
+    description_en:
+      "A pink welcome tray of wrapped chocolates with personalized “Welcome Baby” cards and colored almonds. Starting at $50.",
+    popularity: 86,
+  },
+  {
+    id: "nb-007",
+    name_ar: "علب ضيافة ورود الشموع الوردية",
+    name_en: "Pink Rose Candle Favor Set",
+    price: 50,
+    category: "newborn",
+    images: ["/products/newborn-welcome-baby-pink.jpeg"],
+    description_ar:
+      "طقم علب ضيافة أنيقة بشموع على شكل ورود وردية مع شريط ساتان، لاستقبال المولودة الجديدة.",
+    description_en:
+      "A set of elegant favor boxes with pink rose-shaped candles and satin ribbons to welcome a baby girl. Starting at $50.",
+    popularity: 84,
+  },
+  {
+    id: "nb-008",
+    name_ar: "صينية ضيافة الترحيب بالأمير الصغير",
+    name_en: "Welcome Little Prince Chocolate Tray",
+    price: 50,
+    category: "newborn",
+    images: ["/products/newborn-little-prince.jpeg"],
+    description_ar:
+      "صينية ضيافة بتصميم «Welcome Little Prince» بالأزرق والذهبي وشوكولا مخصصة باسم المولود.",
+    description_en:
+      "A navy-and-gold “Welcome Little Prince” tray of personalized chocolates to celebrate a baby boy. Starting at $50.",
+    popularity: 85,
+  },
+  {
+    id: "nb-009",
+    name_ar: "علب ضيافة الباليرينا الوردية",
+    name_en: "Pink Ballerina Favor Boxes",
+    price: 50,
+    category: "newborn",
+    images: ["/products/newborn-ballerina.jpeg"],
+    description_ar:
+      "علب أكريليك شفافة بوردة وردية وطوبر باليرينا ذهبي، تذكار لطيف لحفلات استقبال المولودة.",
+    description_en:
+      "Clear acrylic boxes with a pink rose and a gold ballerina topper — a sweet keepsake for baby-girl showers. Starting at $50.",
+    popularity: 82,
+  },
 
   // ──────────────────────── Anniversary ───────────────────────
   {
