@@ -52,8 +52,24 @@ export const candleFlowersCategory: Category = {
   icon: "🕯️",
 };
 
+// Marble Printing is also a product line (not an occasion) — kept out of the
+// occasion grid/nav, with its own home section and category page.
+export const marblePrintingCategory: Category = {
+  id: "marble-printing",
+  name_ar: "الطباعة على الرخام",
+  name_en: "Marble Printing",
+  tagline_ar: "اطبع صورك ورسائلك على بلاط الرخام الفاخر",
+  tagline_en: "Print your photos and messages on premium marble tiles",
+  gradient: "from-stone-300 via-stone-200 to-amber-100",
+  icon: "🖼️",
+};
+
 // All categories (occasions + product lines) — used for lookups and routing.
-export const allCategories: Category[] = [...categories, candleFlowersCategory];
+export const allCategories: Category[] = [
+  ...categories,
+  candleFlowersCategory,
+  marblePrintingCategory,
+];
 
 export const categoryMap: Record<CategoryId, Category> = allCategories.reduce(
   (acc, c) => {

@@ -2,7 +2,11 @@
 
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
-import { categories, candleFlowersCategory } from "@/data/categories";
+import {
+  categories,
+  candleFlowersCategory,
+  marblePrintingCategory,
+} from "@/data/categories";
 import { getFeaturedProducts, getProductsByCategory } from "@/data/products";
 import CategoryCard from "@/components/CategoryCard";
 import ProductCard from "@/components/ProductCard";
@@ -11,6 +15,7 @@ export default function HomePage() {
   const { tr, locale } = useLanguage();
   const featured = getFeaturedProducts();
   const candleFlowers = getProductsByCategory("candle-flowers");
+  const marblePrinting = getProductsByCategory("marble-printing");
 
   return (
     <div className="animate-fade-in-up">
@@ -84,6 +89,34 @@ export default function HomePage() {
           <Link href="/categories/candle-flowers" className="btn-secondary">
             {tr("view_details")}
           </Link>
+        </div>
+      </section>
+
+      {/* Marble Printing */}
+      <section className="border-y border-ink/10 bg-cream/40 py-16">
+        <div className="container-page">
+          <div className="mb-10 text-center">
+            <p className="eyebrow">
+              {locale === "ar"
+                ? marblePrintingCategory.tagline_ar
+                : marblePrintingCategory.tagline_en}
+            </p>
+            <h2 className="section-title mt-3">
+              {locale === "ar"
+                ? marblePrintingCategory.name_ar
+                : marblePrintingCategory.name_en}
+            </h2>
+          </div>
+          <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
+            {marblePrinting.map((p) => (
+              <ProductCard key={p.id} product={p} />
+            ))}
+          </div>
+          <div className="mt-10 text-center">
+            <Link href="/categories/marble-printing" className="btn-secondary">
+              {tr("view_details")}
+            </Link>
+          </div>
         </div>
       </section>
 

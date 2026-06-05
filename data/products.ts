@@ -429,6 +429,60 @@ export const products: Product[] = [
       "An elegant wax-flower bouquet of burgundy and white roses in a soft white pot — a perfect gift for any occasion.",
     popularity: 78,
   },
+
+  // ─────────────────────── Marble Printing ─────────────────────
+  {
+    id: "mp-001",
+    name_ar: "لوحة رخام مطبوعة — تصميم الكعبة",
+    name_en: "Printed Marble Tile — Kaaba Design",
+    price: 20,
+    category: "marble-printing",
+    images: ["/products/marble-kaaba-heart.jpeg"],
+    description_ar:
+      "لوحة رخام (سليت) على شكل قلب بطباعة الكعبة وعبارة «حج مبرور» مع اسم الحاج والسنة.",
+    description_en:
+      "A heart-shaped slate marble tile printed with the Kaaba, a “Hajj Mabrour” phrase, and the pilgrim's name and year.",
+    popularity: 80,
+  },
+  {
+    id: "mp-002",
+    name_ar: "لوحة رخام بصورتك الشخصية",
+    name_en: "Custom Photo Marble Tile",
+    price: 20,
+    category: "marble-printing",
+    images: ["/products/marble-photo.jpeg"],
+    description_ar:
+      "لوحة رخام مطبوعة بصورتك الشخصية مع الأسماء، تذكار راقٍ من رحلة الحج أو العمرة.",
+    description_en:
+      "A marble tile printed with your own photo and names — a refined keepsake from a Hajj or Umrah journey.",
+    popularity: 82,
+  },
+  {
+    id: "mp-003",
+    name_ar: "لوحة رخام — حج مبرور",
+    name_en: "Marble Tile — Hajj Mabrour",
+    price: 20,
+    category: "marble-printing",
+    images: ["/products/marble-hajj-mabrour.jpeg"],
+    description_ar:
+      "لوحة رخام مربعة بطباعة الكعبة وعبارة «حج مبرور» مع الاسم، على حامل أنيق.",
+    description_en:
+      "A square marble tile printed with the Kaaba and a “Hajj Mabrour” phrase with a name, on an elegant stand.",
+    popularity: 78,
+  },
+  {
+    id: "mp-004",
+    name_ar: "لوحة رخام — عمرة مباركة",
+    name_en: "Marble Tile — Umrah Mubarak",
+    price: 20,
+    category: "marble-printing",
+    images: ["/products/marble-umrah.jpeg"],
+    description_ar:
+      "لوحة رخام بطباعة الكعبة وزخارف وردية وعبارة «عمرة مباركة» مع الاسم، بتغليف هدية أنيق.",
+    description_en:
+      "A marble tile printed with the Kaaba, floral accents, and an “Umrah Mubarak” phrase with a name, in elegant gift wrap.",
+    popularity: 76,
+  },
 ];
 
 export function getProduct(id: string): Product | undefined {
