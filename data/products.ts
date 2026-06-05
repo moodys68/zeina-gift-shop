@@ -310,6 +310,73 @@ export const products: Product[] = [
       "A photo frame adorned with a graduation-cap design to keep the proudest moments of the big day.",
     popularity: 57,
   },
+
+  // ─────────────────────── Candle Flowers ──────────────────────
+  {
+    id: "cf-001",
+    name_ar: "باقة شموع وردية",
+    name_en: "Pink Candle Flower Bouquet",
+    price: 25,
+    category: "candle-flowers",
+    images: ["/products/candle-flowers-pink.jpeg"],
+    description_ar:
+      "باقة ورود مصنوعة يدويًا من الشمع بدرجات الوردي في إناء أنيق، برائحة عطرة منعشة.",
+    description_en:
+      "A handmade bouquet of pink-toned wax flowers in an elegant pot, with an exotic refreshing scent.",
+    popularity: 84,
+  },
+  {
+    id: "cf-002",
+    name_ar: "باقة شموع أحمر وكريمي",
+    name_en: "Red & Cream Candle Flower Bouquet",
+    price: 25,
+    category: "candle-flowers",
+    images: ["/products/candle-flowers-red-cream.jpeg"],
+    description_ar:
+      "باقة شموع بورود حمراء وكريمية وزهر مجفف في إناء وردي، لمسة دافئة وعطر يدوم.",
+    description_en:
+      "A wax-flower bouquet of red and cream roses with baby's breath in a mauve pot — warm and long-scented.",
+    popularity: 82,
+  },
+  {
+    id: "cf-003",
+    name_ar: "باقة شموع عنابي وخزامى",
+    name_en: "Burgundy & Lavender Candle Flower Bouquet",
+    price: 25,
+    category: "candle-flowers",
+    images: ["/products/candle-flowers-burgundy-lavender.jpeg"],
+    description_ar:
+      "باقة شموع فاخرة بورود عنابية وأعشاب الخزامى المجففة في إناء أبيض مزخرف.",
+    description_en:
+      "A luxe wax-flower bouquet of burgundy blooms and dried lavender pampas in a textured white pot.",
+    popularity: 80,
+  },
+  {
+    id: "cf-004",
+    name_ar: "باقة شموع أحمر مشكّل",
+    name_en: "Mixed Red Candle Flower Bouquet",
+    price: 25,
+    category: "candle-flowers",
+    images: ["/products/candle-flowers-red-mixed.jpeg"],
+    description_ar:
+      "باقة شموع غنية بورود حمراء وبيضاء وبيج مع زهر الجبسوفيليا في إناء أبيض.",
+    description_en:
+      "A rich wax-flower bouquet of red, white, and beige roses with gypsophila in a white pot.",
+    popularity: 79,
+  },
+  {
+    id: "cf-005",
+    name_ar: "باقة شموع عنابي وأبيض",
+    name_en: "Burgundy & White Candle Flower Bouquet",
+    price: 25,
+    category: "candle-flowers",
+    images: ["/products/candle-flowers-burgundy-white.jpeg"],
+    description_ar:
+      "باقة شموع راقية بورود عنابية وبيضاء في إناء أبيض ناعم، هدية مثالية لكل مناسبة.",
+    description_en:
+      "An elegant wax-flower bouquet of burgundy and white roses in a soft white pot — a perfect gift for any occasion.",
+    popularity: 78,
+  },
 ];
 
 export function getProduct(id: string): Product | undefined {

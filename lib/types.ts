@@ -4,7 +4,8 @@ export type CategoryId =
   | "newborn"
   | "anniversary"
   | "hajj-umrah"
-  | "graduation";
+  | "graduation"
+  | "candle-flowers";
 
 export interface Category {
   id: CategoryId;

@@ -39,7 +39,23 @@ export const categories: Category[] = [
   },
 ];
 
-export const categoryMap: Record<CategoryId, Category> = categories.reduce(
+// Candle Flowers is a product line (not an occasion), so it is kept out of the
+// "Shop by Occasion" grid and main nav, but still has its own home section and
+// category page.
+export const candleFlowersCategory: Category = {
+  id: "candle-flowers",
+  name_ar: "ورود الشموع",
+  name_en: "Candle Flowers",
+  tagline_ar: "ورود مصنوعة من الشموع برائحة عطرة منعشة",
+  tagline_en: "Flowers crafted from candles with an exotic, refreshing scent",
+  gradient: "from-pink-300 via-rose-200 to-amber-100",
+  icon: "🕯️",
+};
+
+// All categories (occasions + product lines) — used for lookups and routing.
+export const allCategories: Category[] = [...categories, candleFlowersCategory];
+
+export const categoryMap: Record<CategoryId, Category> = allCategories.reduce(
   (acc, c) => {
     acc[c.id] = c;
     return acc;

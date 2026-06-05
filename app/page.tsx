@@ -2,14 +2,15 @@
 
 import Link from "next/link";
 import { useLanguage } from "@/context/LanguageContext";
-import { categories } from "@/data/categories";
-import { getFeaturedProducts } from "@/data/products";
+import { categories, candleFlowersCategory } from "@/data/categories";
+import { getFeaturedProducts, getProductsByCategory } from "@/data/products";
 import CategoryCard from "@/components/CategoryCard";
 import ProductCard from "@/components/ProductCard";
 
 export default function HomePage() {
-  const { tr } = useLanguage();
+  const { tr, locale } = useLanguage();
   const featured = getFeaturedProducts();
+  const candleFlowers = getProductsByCategory("candle-flowers");
 
   return (
     <div className="animate-fade-in-up">
@@ -57,6 +58,32 @@ export default function HomePage() {
               <ProductCard key={p.id} product={p} />
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Candle Flowers */}
+      <section className="container-page py-16">
+        <div className="mb-10 text-center">
+          <p className="eyebrow">
+            {locale === "ar"
+              ? candleFlowersCategory.tagline_ar
+              : candleFlowersCategory.tagline_en}
+          </p>
+          <h2 className="section-title mt-3">
+            {locale === "ar"
+              ? candleFlowersCategory.name_ar
+              : candleFlowersCategory.name_en}
+          </h2>
+        </div>
+        <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
+          {candleFlowers.map((p) => (
+            <ProductCard key={p.id} product={p} />
+          ))}
+        </div>
+        <div className="mt-10 text-center">
+          <Link href="/categories/candle-flowers" className="btn-secondary">
+            {tr("view_details")}
+          </Link>
         </div>
       </section>
 
