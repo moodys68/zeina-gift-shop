@@ -48,7 +48,16 @@ export default function RootLayout({
         <Providers>
           <div className="flex min-h-screen flex-col">
             <Header />
-            <AnnouncementBanner />
+            <AnnouncementBanner
+              textKey="pilgrim_banner"
+              icon="🕋"
+              bgClass="bg-red-600 animate-flash-bg"
+            />
+            <AnnouncementBanner
+              textKey="newproducts_banner"
+              icon="🕯️"
+              bgClass="bg-navy-700 animate-flash-bg-navy"
+            />
             <main className="flex-1">{children}</main>
             <Footer />
           </div>

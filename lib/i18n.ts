@@ -152,6 +152,10 @@ const dict: Dict = {
     ar: "🕋 منتجاتنا الجديدة للحجّاج العائدين من مكة المكرمة — اطلب الآن!",
     en: "🕋 Our new products for pilgrims coming back from Makkah — order now!",
   },
+  newproducts_banner: {
+    ar: "🕯️ منتجاتنا الجديدة: ورود مصنوعة من الشموع برائحة عطرة منعشة، وطباعة على بلاط الرخام",
+    en: "🕯️ Our new products: flowers made of candles with an exotic refreshing scent, and printing on marble tiles",
+  },
 };
 
 export type TranslationKey = keyof typeof dict;

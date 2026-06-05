@@ -65,11 +65,16 @@ const config: Config = {
           "0%, 100%": { backgroundColor: "#DC2626" }, // red-600
           "50%": { backgroundColor: "#991B1B" }, // red-800
         },
+        "flash-bg-navy": {
+          "0%, 100%": { backgroundColor: "#21385B" }, // navy-700
+          "50%": { backgroundColor: "#0E1F38" }, // deep navy
+        },
       },
       animation: {
         "fade-in-up": "fade-in-up 0.5s ease-out both",
         flash: "flash 1s ease-in-out infinite",
         "flash-bg": "flash-bg 1.1s ease-in-out infinite",
+        "flash-bg-navy": "flash-bg-navy 1.1s ease-in-out infinite",
       },
     },
   },
