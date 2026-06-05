@@ -116,6 +116,20 @@ export const products: Product[] = [
       "A pair of crystal glasses engraved with your anniversary date — to toast your love on every occasion.",
     popularity: 58,
   },
+  {
+    id: "an-006",
+    name_ar: "صينية ضيافة الخطوبة بالخواتم الذهبية",
+    name_en: "Gold Rings Engagement Favor Tray",
+    price: 30,
+    category: "anniversary",
+    images: ["/products/anniversary-rings-tray.jpeg"],
+    description_ar:
+      "صينية ذهبية أنيقة بعلب ضيافة مزينة بخواتم ذهبية، مثالية للخطوبة وذكرى الزواج.",
+    description_en:
+      "An elegant gold tray of favor boxes adorned with gold rings — perfect for engagements and anniversaries.",
+    popularity: 82,
+    featured: true,
+  },
 
   // ──────────────────────── Hajj & Umrah ──────────────────────
   {
@@ -184,6 +198,48 @@ export const products: Product[] = [
     description_en:
       "An Islamic-art frame with a gilded Quranic verse that brings serenity to any space.",
     popularity: 63,
+  },
+  {
+    id: "hu-006",
+    name_ar: "صينية ضيافة الحج الذهبية",
+    name_en: "Gold Hajj Welcome Tray",
+    price: 40,
+    category: "hajj-umrah",
+    images: ["/products/hajj-gold-tray.jpeg"],
+    description_ar:
+      "صينية ذهبية فاخرة بحلويات ملفوفة وعبارة «حج مبرور وسعي مشكور»، مثالية لاستقبال الحجاج العائدين.",
+    description_en:
+      "A luxurious gold tray of wrapped sweets topped with a “Hajj Mabrour” calligraphy piece — perfect for welcoming returning pilgrims.",
+    popularity: 85,
+    featured: true,
+  },
+  {
+    id: "hu-007",
+    name_ar: "صينية ضيافة الحج بالشوكولا",
+    name_en: "Hajj Favors Chocolate Tray",
+    price: 30,
+    category: "hajj-umrah",
+    images: ["/products/hajj-favors-tray.jpeg"],
+    description_ar:
+      "صينية ذهبية بشوكولا ملفوفة وبطاقات «حج مبرور» مزخرفة، لتوزيعها على المهنئين بالعودة.",
+    description_en:
+      "A gold tray of wrapped chocolates with decorated “Hajj Mabrour” cards to share with well-wishers.",
+    popularity: 81,
+    featured: true,
+  },
+  {
+    id: "hu-008",
+    name_ar: "طبق شوكولا الكعبة للحج",
+    name_en: "Kaaba Chocolate Platter",
+    price: 30,
+    category: "hajj-umrah",
+    images: ["/products/hajj-chocolate-platter.jpeg"],
+    description_ar:
+      "طبق ضيافة بشوكولا مغلّفة بالذهبي وحلوى بيضاء مع ملصقات الكعبة المشرّفة، لمناسبات الحج والعمرة.",
+    description_en:
+      "A serving platter of gold-wrapped chocolates and white sweets with Kaaba stickers, for Hajj & Umrah occasions.",
+    popularity: 79,
+    featured: true,
   },
 
   // ───────────────────────── Graduation ───────────────────────
