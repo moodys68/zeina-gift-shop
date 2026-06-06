@@ -281,8 +281,8 @@ export const products: Product[] = [
   },
   {
     id: "hu-008",
-    name_ar: "طبق شوكولا الكعبة للحج",
-    name_en: "Kaaba Chocolate Platter",
+    name_ar: "طبق شوكولا مزين بصورة الكعبة",
+    name_en: "Chocolate Platter with Kaaba Image",
     price: 30,
     category: "hajj-umrah",
     images: ["/products/hajj-chocolate-platter.jpeg"],
