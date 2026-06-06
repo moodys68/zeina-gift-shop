@@ -6,7 +6,8 @@ export type CategoryId =
   | "hajj-umrah"
   | "graduation"
   | "candle-flowers"
-  | "marble-printing";
+  | "marble-printing"
+  | "mugs";
 
 export interface Category {
   id: CategoryId;

@@ -64,11 +64,24 @@ export const marblePrintingCategory: Category = {
   icon: "🖼️",
 };
 
+// Customized printing mugs — another product line, kept out of the occasion
+// grid/nav, with its own home section and category page.
+export const mugsCategory: Category = {
+  id: "mugs",
+  name_ar: "أكواب الطباعة المخصصة",
+  name_en: "Customized Printing Mugs",
+  tagline_ar: "اطبع الأسماء والتصاميم التي تحبها على الأكواب",
+  tagline_en: "Print the names and designs you love on mugs",
+  gradient: "from-red-300 via-rose-200 to-amber-100",
+  icon: "☕",
+};
+
 // All categories (occasions + product lines) — used for lookups and routing.
 export const allCategories: Category[] = [
   ...categories,
   candleFlowersCategory,
   marblePrintingCategory,
+  mugsCategory,
 ];
 
 export const categoryMap: Record<CategoryId, Category> = allCategories.reduce(

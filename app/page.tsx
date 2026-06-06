@@ -6,6 +6,7 @@ import {
   categories,
   candleFlowersCategory,
   marblePrintingCategory,
+  mugsCategory,
 } from "@/data/categories";
 import { getFeaturedProducts, getProductsByCategory } from "@/data/products";
 import CategoryCard from "@/components/CategoryCard";
@@ -16,6 +17,7 @@ export default function HomePage() {
   const featured = getFeaturedProducts();
   const candleFlowers = getProductsByCategory("candle-flowers");
   const marblePrinting = getProductsByCategory("marble-printing");
+  const mugs = getProductsByCategory("mugs");
 
   return (
     <div className="animate-fade-in-up">
@@ -117,6 +119,30 @@ export default function HomePage() {
               {tr("view_details")}
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* Customized Mugs */}
+      <section className="container-page py-16">
+        <div className="mb-10 text-center">
+          <p className="eyebrow">
+            {locale === "ar"
+              ? mugsCategory.tagline_ar
+              : mugsCategory.tagline_en}
+          </p>
+          <h2 className="section-title mt-3">
+            {locale === "ar" ? mugsCategory.name_ar : mugsCategory.name_en}
+          </h2>
+        </div>
+        <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:grid-cols-4">
+          {mugs.map((p) => (
+            <ProductCard key={p.id} product={p} />
+          ))}
+        </div>
+        <div className="mt-10 text-center">
+          <Link href="/categories/mugs" className="btn-secondary">
+            {tr("view_details")}
+          </Link>
         </div>
       </section>
 

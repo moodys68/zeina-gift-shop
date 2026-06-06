@@ -483,6 +483,60 @@ export const products: Product[] = [
       "A marble tile printed with the Kaaba, floral accents, and an “Umrah Mubarak” phrase with a name, in elegant gift wrap.",
     popularity: 76,
   },
+
+  // ───────────────────── Customized Mugs ───────────────────────
+  {
+    id: "mug-001",
+    name_ar: "كوب مطبوع بالاسم",
+    name_en: "Personalized Name Mug",
+    price: 6,
+    category: "mugs",
+    images: ["/products/mug-personalized-name.jpeg"],
+    description_ar:
+      "كوب سيراميك أبيض يُطبع عليه أي اسم بخط أنيق مع قلب، هدية شخصية بسعر مميز.",
+    description_en:
+      "A white ceramic mug printed with any name in an elegant script with a heart — a personal gift at a great price.",
+    popularity: 83,
+  },
+  {
+    id: "mug-002",
+    name_ar: "كوب الرموز اللبنانية",
+    name_en: "Lebanese Icons Mug",
+    price: 6,
+    category: "mugs",
+    images: ["/products/mug-lebanese-icons.jpeg"],
+    description_ar:
+      "كوب مرح بطباعة رموز ومقولات لبنانية شهيرة، تذكار يحمل روح لبنان.",
+    description_en:
+      "A fun mug printed with iconic Lebanese symbols and sayings — a keepsake full of Lebanese spirit.",
+    popularity: 81,
+  },
+  {
+    id: "mug-003",
+    name_ar: "كوب لبنان",
+    name_en: "Lebanon Mug",
+    price: 6,
+    category: "mugs",
+    images: ["/products/mug-lebanon.jpeg"],
+    description_ar:
+      "كوب بتصميم «Lebanon» يضم معالم وتراث لبنان برسومات أنيقة.",
+    description_en:
+      "A “Lebanon” mug featuring the country's landmarks and heritage in elegant illustrations.",
+    popularity: 80,
+  },
+  {
+    id: "mug-004",
+    name_ar: "كوب ع هدير البوسطة",
+    name_en: "“Bosta” Fairuz Mug",
+    price: 6,
+    category: "mugs",
+    images: ["/products/mug-fairuz-bosta.jpeg"],
+    description_ar:
+      "كوب بتصميم «ع هدير البوسطة» المستوحى من أغنية فيروز والبوسطة الحمراء الشهيرة.",
+    description_en:
+      "A mug with the “Ala Hadir el-Bosta” design inspired by Fairuz's song and the iconic red bus.",
+    popularity: 79,
+  },
 ];
 
 export function getProduct(id: string): Product | undefined {
